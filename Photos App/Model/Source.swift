@@ -1,10 +1,14 @@
 import UIKit
 
 
-struct Source {
+struct Source: Hashable {
     var title: String
     var photo: UIImage
     var count: String
+}
+
+struct AlbumsTitle {
+    var title: String
 }
 
 
@@ -26,7 +30,22 @@ extension Source {
             Source(title: "Instagram", photo: UIImage(named: "image4") ?? UIImage(), count: "45"),
             Source(title: "Facebook", photo: UIImage(named: "image4") ?? UIImage(), count: "67"),
             Source(title: "YouTube", photo: UIImage(named: "image3") ?? UIImage(), count: "76")
+        ],
+        [
+            Source(title: "Imports", photo: UIImage(systemName: "square.and.arrow.down") ?? UIImage(), count: "123"),
+            Source(title: "Duplicates", photo: UIImage(systemName: "doc.on.doc") ?? UIImage(), count: "8"),
+            Source(title: "Hidden", photo: UIImage(systemName: "eye.slash") ?? UIImage(), count: "32"),
+            Source(title: "Recently Deleted", photo: UIImage(systemName: "trash.slash") ?? UIImage(), count: "37")
         ]
-        
+
+    ]
+}
+
+extension AlbumsTitle {
+    static var albumName = [
+        AlbumsTitle(title: "My Albums"),
+        AlbumsTitle(title: "Shared Albums"),
+        AlbumsTitle(title: "Social Albums"),
+        AlbumsTitle(title: "Utilities")
     ]
 }

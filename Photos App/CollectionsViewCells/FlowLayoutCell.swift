@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 
 class FlowLayoutCell: UICollectionViewCell {
-
+    //MARK: - UI elements
     lazy var image: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFill
@@ -25,7 +25,7 @@ class FlowLayoutCell: UICollectionViewCell {
 
         return label
     }()
-
+    //MARK: - Life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -35,7 +35,7 @@ class FlowLayoutCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    //MARK: - setup functions
     private func setupUI() {
         addSubview(image)
         addSubview(imageLabel)
@@ -50,8 +50,7 @@ class FlowLayoutCell: UICollectionViewCell {
         }
 
         imageLabel.snp.makeConstraints { make in
-            make.width.equalTo(6)
-            make.top.equalTo(image.snp.bottom).offset(15)
+            make.top.equalTo(image.snp.bottom).offset(14)
             make.right.left.equalToSuperview()
         }
 
@@ -64,6 +63,7 @@ class FlowLayoutCell: UICollectionViewCell {
         self.image.image = nil
     }
 
+    //MARK: - Configure function
     public func configure(title: String, image: UIImage, count: String) {
         self.image.image = image
         self.imageLabel.text = title

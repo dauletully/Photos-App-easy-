@@ -18,6 +18,8 @@
 		375C209F2AFFF32400334716 /* FlowLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C209E2AFFF32400334716 /* FlowLayoutCell.swift */; };
 		375C20A12AFFFAA100334716 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C20A02AFFFAA100334716 /* Source.swift */; };
 		375C20A32B00046400334716 /* PhotosHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C20A22B00046400334716 /* PhotosHeader.swift */; };
+		375C20A52B00E62100334716 /* ListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C20A42B00E62100334716 /* ListCollectionCell.swift */; };
+		375C20AD2B00F84800334716 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375C20AC2B00F84800334716 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		375C209E2AFFF32400334716 /* FlowLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutCell.swift; sourceTree = "<group>"; };
 		375C20A02AFFFAA100334716 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		375C20A22B00046400334716 /* PhotosHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosHeader.swift; sourceTree = "<group>"; };
+		375C20A42B00E62100334716 /* ListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionCell.swift; sourceTree = "<group>"; };
+		375C20AC2B00F84800334716 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,18 +70,68 @@
 		375C20842AFFF10000334716 /* Photos App */ = {
 			isa = PBXGroup;
 			children = (
-				375C20852AFFF10000334716 /* AppDelegate.swift */,
-				375C20872AFFF10000334716 /* SceneDelegate.swift */,
-				375C20892AFFF10000334716 /* ViewController.swift */,
-				375C208B2AFFF10000334716 /* Main.storyboard */,
-				375C208E2AFFF10200334716 /* Assets.xcassets */,
-				375C20902AFFF10200334716 /* LaunchScreen.storyboard */,
+				375C20A92B00F3BB00334716 /* CollectionsViewCells */,
+				375C20A72B00F38800334716 /* Controllers */,
+				375C20A62B00F37600334716 /* Model */,
+				375C20A82B00F39D00334716 /* Delegates */,
 				375C20932AFFF10200334716 /* Info.plist */,
-				375C209E2AFFF32400334716 /* FlowLayoutCell.swift */,
-				375C20A02AFFFAA100334716 /* Source.swift */,
-				375C20A22B00046400334716 /* PhotosHeader.swift */,
 			);
 			path = "Photos App";
+			sourceTree = "<group>";
+		};
+		375C20A62B00F37600334716 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				375C20A02AFFFAA100334716 /* Source.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		375C20A72B00F38800334716 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				375C20892AFFF10000334716 /* ViewController.swift */,
+				375C20AC2B00F84800334716 /* TabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		375C20A82B00F39D00334716 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				375C20AA2B00F60000334716 /* Assets */,
+				375C20852AFFF10000334716 /* AppDelegate.swift */,
+				375C20872AFFF10000334716 /* SceneDelegate.swift */,
+				375C20AB2B00F64900334716 /* LaunchScreen */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		375C20A92B00F3BB00334716 /* CollectionsViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				375C20A22B00046400334716 /* PhotosHeader.swift */,
+				375C20A42B00E62100334716 /* ListCollectionCell.swift */,
+				375C209E2AFFF32400334716 /* FlowLayoutCell.swift */,
+			);
+			path = CollectionsViewCells;
+			sourceTree = "<group>";
+		};
+		375C20AA2B00F60000334716 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				375C208E2AFFF10200334716 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		375C20AB2B00F64900334716 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				375C208B2AFFF10000334716 /* Main.storyboard */,
+				375C20902AFFF10200334716 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375C20A52B00E62100334716 /* ListCollectionCell.swift in Sources */,
+				375C20AD2B00F84800334716 /* TabBarController.swift in Sources */,
 				375C208A2AFFF10000334716 /* ViewController.swift in Sources */,
 				375C20A32B00046400334716 /* PhotosHeader.swift in Sources */,
 				375C209F2AFFF32400334716 /* FlowLayoutCell.swift in Sources */,
